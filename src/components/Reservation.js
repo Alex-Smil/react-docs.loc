@@ -16,12 +16,11 @@ class Reservation extends React.Component {
         const value = target.type === 'checkbox' ? target.checked : target.value;
         const name = target.name;
 
-        // внутри setState() передаем вычисляемое св-во объекта name
+        // внутри setState() передаем вычисляемое св-во объекта 
         this.setState({
             [name]: value
         });
 
-        ((n = this.state.numberOfGuests) => console.log('Кол-во гостей: ', n))();
     }
 
     render() {

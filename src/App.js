@@ -7,10 +7,11 @@ import './App.css';
 // import Greeting from './components/Greeting';
 // import Greeting from './components/LoginControl';
 // import LoginControl from './components/LoginControl';
-import NameForm from './components/NameForm';
-import EssayForm from './components/EssayForm';
-import FlavorForm from './components/FlavorForm'
-import Reservation from './components/Reservation'
+// import NameForm from './components/NameForm';
+// import EssayForm from './components/EssayForm';
+// import FlavorForm from './components/FlavorForm';
+// import Reservation from './components/Reservation';
+import Calculater from './components/BoilingCalculater';
 
 function App() {
   return (
@@ -21,10 +22,11 @@ function App() {
           {/* <Toggle /> */}
           {/* <Greeting isLoggedIn={true} />   */}
           {/* <LoginControl /> */}
-          <NameForm />
-          <EssayForm />
-          <FlavorForm />
-          <Reservation />
+          {/* <NameForm /> */}
+          {/* <EssayForm /> */}
+          {/* <FlavorForm /> */}
+          {/* <Reservation /> */}
+          <Calculater />
       </div>
   );
 }
