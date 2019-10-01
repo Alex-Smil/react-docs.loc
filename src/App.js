@@ -12,11 +12,15 @@ import './App.css';
 // import FlavorForm from './components/FlavorForm';
 // import Reservation from './components/Reservation';
 import Calculater from './components/BoilingCalculater';
+import WelcomeDialog from './components/11-WelcomeDialog.js';
+
 
 function App() {
   return (
       <div style={{
-        textAlign: 'center'
+        textAlign: 'center',
+        maxWidth: '70%',
+        margin: '30px auto 30px'
       }}>
           {/* <Clock /> */}
           {/* <Toggle /> */}
@@ -27,6 +31,7 @@ function App() {
           {/* <FlavorForm /> */}
           {/* <Reservation /> */}
           <Calculater />
+          <WelcomeDialog />
       </div>
   );
 }

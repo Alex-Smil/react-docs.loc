@@ -1,6 +1,5 @@
 import React from 'react';
-import { template } from '@babel/core';
-
+import './BoilingCalculater.css'
 const scaleNames = {
     c: 'Цельсия',
     f: 'Фаренгейта'
@@ -9,17 +8,10 @@ const scaleNames = {
 class TemperatureInput extends React.Component {
     constructor(props) {
         super(props);
-        // this.state = {
-        //     temperature: ''
-        // };
-
         this.handleChange = this.handleChange.bind(this);
     }
 
     handleChange(e) {
-        // this.setState({
-        //     temperature: e.target.value
-        // });
         this.props.onTemperatureChange(e.target.value);
     }
 
@@ -71,7 +63,8 @@ class Calculater extends React.Component {
         const fahrenheit = scale === 'c' ? tryConvert(temperature, toFahrenheit) : temperature;
 
         return(
-            <div>
+            <div className='calc-container'>
+                <h2>Boiling checker</h2>
                 <TemperatureInput 
                     scale='c'
                     temperature={celsius}
